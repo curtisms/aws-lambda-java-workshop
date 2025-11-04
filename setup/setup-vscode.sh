@@ -21,9 +21,9 @@ rm awscliv2.zip
 aws --version
 
 ## Set JDK 21 as default
-sudo yum -y install java-21-amazon-corretto-devel
-sudo update-alternatives --set java /usr/lib/jvm/java-21-amazon-corretto.x86_64/bin/java
-sudo update-alternatives --set javac /usr/lib/jvm/java-21-amazon-corretto.x86_64/bin/javac
+sudo yum -y install java-25-amazon-corretto-devel
+sudo update-alternatives --set java /usr/lib/jvm/java-25-amazon-corretto.x86_64/bin/java
+sudo update-alternatives --set javac /usr/lib/jvm/java-25-amazon-corretto.x86_64/bin/javac
 export JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto.x86_64
 echo "export JAVA_HOME=${JAVA_HOME}" | tee -a ~/.bash_profile
 echo "export JAVA_HOME=${JAVA_HOME}" | tee -a ~/.bashrc
